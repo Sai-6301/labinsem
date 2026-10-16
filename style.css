@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background: lightgray;
+    margin: 0;
+}
+
+nav, footer {
+    background: navy;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    background: blue;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
